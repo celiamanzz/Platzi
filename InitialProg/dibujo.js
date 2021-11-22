@@ -4,18 +4,18 @@ var txt = document.getElementById("txt_box");
 var but = document.getElementById("button");
 but.addEventListener("click", dibujoPorClick ); //boton 
 
-var lienzo = d.getContext("2d");
+var papel = d.getContext("2d");
 
 dibujarLinea("#AAF", 0, 0, 0, 300);
 dibujarLinea("#AAF", 0, 300, 300, 300);
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal) {
 
-    lienzo.beginPath();
-    lienzo.strokeStyle = color;
-    lienzo.moveTo(xinicial, yinicial);
-    lienzo.lineTo(xfinal, yfinal);
-    lienzo.stroke();
-    lienzo.closePath();
+    papel.beginPath();
+    papel.strokeStyle = color;
+    papel.moveTo(xinicial, yinicial);
+    papel.lineTo(xfinal, yfinal);
+    papel.stroke();
+    papel.closePath();
 }
 
 function dibujoPorClick() {
